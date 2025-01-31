@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 AI-Powered Code Search</h1>
+            <p>Search, analyze, and get AI-powered explanations for your code</p>
+        </header>
+
+        <!-- Process URL Section -->
+        <div class="card">
+            <h2>🌐 Process a URL</h2>
+            <input type="text" id="url-input" placeholder="Enter a website URL..." oninput="validateURL()" />
+            <p id="url-warning" class="warning"></p>
+            <button id="process-btn" onclick="processURL()">Process</button>
+            <div id="loading" class="spinner hidden"></div>
+        </div>
+
+        <!-- Ask a Question Section -->
+        <div class="card">
+            <h2>❓ Ask a Question</h2>
+            <input type="text" id="query-input" placeholder="Ask about the content..." oninput="validateQuery()" />
+            <p id="query-warning" class="warning"></p>
+            <button id="query-btn" onclick="askQuestion()">Get Answer</button>
+        </div>
+
+        <!-- AI Response Section -->
+        <div class="card response-card">
+            <h2>📜 AI Response</h2>
+            <div id="response-container">Your response will appear here...</div>
+        </div>
+
+        <footer>
+            <p>🚀 Powered by AI & Groq</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

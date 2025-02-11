@@ -123,7 +123,3 @@ POST /query
 - 📌 **Authentication** – Secure API with user authentication.
 - 📌 **Django Migration** – Move backend to Django for better scalability.
 
-
-## 📝 License
-This project is licensed under the **MIT License**.
-
